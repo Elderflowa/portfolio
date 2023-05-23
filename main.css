@@ -35,7 +35,7 @@ a {
 }
 
 .nav-branding {
-  font-size: 1rem;
+  font-size: 2rem;
 }
 
 .nav-link {
@@ -87,7 +87,7 @@ a {
   .nav-item {
     margin: 16px 0;
   }
-  .nav-item.active {
+  .nav-menu.active {
     left: 0;
   }
 }
