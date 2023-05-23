@@ -7,6 +7,10 @@
 
 header {
   background-color: #333;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
   font-family: "Poppins", sans-serif;
 }
 
@@ -35,7 +39,8 @@ a {
 }
 
 .nav-branding {
-  font-size: 2rem;
+  font-size: 1.3rem;
+  z-index: 10;
 }
 
 .nav-link {
@@ -49,6 +54,7 @@ a {
 .hamburger {
   display: none;
   cursor: pointer;
+  z-index: 10;
 }
 
 .bar {
@@ -75,8 +81,8 @@ a {
   }
   .nav-menu {
     position: fixed;
-    left: -100%;
-    top: 70px;
+    top: -100%;
+    left: 0;
     gap: 0;
     flex-direction: column;
     background-color: #333;
@@ -89,8 +95,46 @@ a {
   }
   .nav-menu.active {
     left: 0;
+    top: 69px;
   }
 }
+/* ORIGINAL NAV BAR
+@media(max-width:768px){
+  .hamburger{
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2){
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu{
+    position:fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color:#333;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .nav-item{
+    margin: 16px 0;
+  }
+
+  .nav-menu.active{
+    left: 0;
+  }
+}
+*/
 body div ul {
   display: flex;
   justify-content: center;
@@ -106,7 +150,6 @@ body div ul a {
 
 body h2 {
   color: white;
-  font-family: "Poppins";
   font-size: 4em;
 }
 
@@ -117,31 +160,88 @@ img {
 
 body {
   background-color: #333;
+  font-family: "Poppins", sans-serif;
   color: white;
 }
-body div div .headline {
+body .headline {
   padding-top: 45vh;
+}
+body .headline_up {
+  padding-top: 40vh;
 }
 body .parallax_wrapper {
   height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
   perspective: 300px;
   text-align: center;
 }
 body .parallax_wrapper .home_screen {
   height: 100vh;
-  background-color: lightgray;
+  background-color: rgb(119, 195, 197);
 }
 body .parallax_wrapper .about_screen {
   height: 100vh;
-  background-color: rebeccapurple;
+  background-color: rgb(73, 121, 122);
 }
 body .parallax_wrapper .contact_screen {
   height: 100vh;
-  background-color: cyan;
+  background-color: rgb(95, 158, 160);
 }
 body .parallax_wrapper .link_screen {
   height: 100vh;
-  background-color: greenyellow;
+  background-color: rgb(73, 121, 122);
+}
+
+/* EMAIL BUTTON */
+.email-button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: rgb(47, 98, 102);
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.button-3:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+.button-3:hover {
+  background-color: #2c974b;
+}
+
+.button-3:focus {
+  box-shadow: rgba(46, 164, 79, 0.4) 0 0 0 3px;
+  outline: none;
+}
+
+.button-3:disabled {
+  background-color: #94d3a2;
+  border-color: rgba(27, 31, 35, 0.1);
+  color: rgba(255, 255, 255, 0.8);
+  cursor: default;
+}
+
+.button-3:active {
+  background-color: #298e46;
+  box-shadow: rgba(20, 70, 32, 0.2) 0 1px 0 inset;
 }/*# sourceMappingURL=main.css.map */
