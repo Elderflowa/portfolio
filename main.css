@@ -9,18 +9,16 @@
 }
 
 .navbar {
-  overflow: hidden;
-  background-color: #333;
-  position: fixed;
-  top: 0;
+  min-height: 50px;
+  height: 5%;
   width: 100%;
-}
-
-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 10;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
   z-index: 10000;
 }
 
@@ -29,7 +27,13 @@ nav h1 {
   justify-content: left;
   color: white;
   font-family: "Poppins";
-  padding-left: 3%;
+  padding-left: 2vh;
+}
+
+nav a {
+  text-transform: none;
+  text-decoration: none;
+  color: white;
 }
 
 nav ul {
@@ -41,9 +45,8 @@ nav ul {
 }
 
 nav ul li {
-  text-decoration: none;
   color: white;
-  padding: 0 1.5rem;
+  padding: 0 2vh;
   text-transform: lowercase;
 }
 
@@ -61,7 +64,7 @@ body div ul {
 body div ul a {
   text-decoration: none;
   color: white;
-  padding: 0 1.5rem;
+  padding: 0 1vh;
   font-size: 150%;
 }
 
@@ -69,6 +72,11 @@ h2 {
   color: white;
   font-family: "Poppins";
   font-size: 4em;
+}
+
+img {
+  height: 7vh;
+  width: 7vh;
 }
 
 body {
@@ -84,6 +92,10 @@ body .parallax_wrapper {
   overflow-x: hidden;
   overflow-y: auto;
   perspective: 300px;
+}
+body .parallax_wrapper .home_screen {
+  height: 100vh;
+  background-color: whitesmoke;
 }
 body .parallax_wrapper .about_screen {
   height: 100vh;
