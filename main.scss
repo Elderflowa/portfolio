@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+
+  text-align: center;
+  
+  }
+
+@mixin align-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10;
+  z-index: 10000;
+}
+
+nav h1 {
+  display: flex;
+  justify-content: left;
+  color: white;
+  font-family: "Poppins";
+  padding-left: 3%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: right;
+  color: white;
+  list-style: none;
+  align-items: center;
+}
+
+nav ul li {
+  text-decoration: none;
+  color: white;
+  padding: 0 1.5rem;
+  text-transform: lowercase;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: white;
+}
+
+body div ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+body div ul a {
+  text-decoration: none;
+  color: white;
+  padding: 0 1.5rem;
+  font-size: 150%;
+}
+
+h2 {
+  color: white;
+  font-family: "Poppins";
+  font-size: 4em;
+}
+
+body {
+  background-color: #333;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  
+  div div .headline {
+    padding-top: 45vh;
+  }
+
+  .parallax_wrapper {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 300px;
+
+    .about_screen {
+      height: 100vh;
+      background-color: rebeccapurple;
+    }
+
+    .contact_screen {
+      height: 100vh;
+      background-color: cyan;
+    }
+
+    .link_screen {
+      height: 100vh;
+      background-color: greenyellow;
+    }
+  }
+}
