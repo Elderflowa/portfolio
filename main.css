@@ -17,6 +17,7 @@
   box-sizing: border-box;
 }
 
+/*SIMPLE ADJUSTMENTS*/
 header {
   background-color: #333;
   position: fixed;
@@ -35,6 +36,7 @@ a {
   text-decoration: none;
 }
 
+/*NAVIGATION BAR*/
 .navbar {
   min-height: 70px;
   display: flex;
@@ -154,6 +156,7 @@ a {
   }
 }
 */
+/*BODY*/
 body div ul {
   display: flex;
   justify-content: center;
@@ -165,12 +168,6 @@ body div ul a {
   color: white;
   padding: 0 1vh;
   font-size: 150%;
-}
-
-/*SCALING IMG FOR LINKS*/
-img {
-  height: 7vh;
-  width: 7vh;
 }
 
 body {
@@ -212,6 +209,12 @@ body .parallax_wrapper .contact_screen {
 body .parallax_wrapper .link_screen {
   height: 100vh;
   background-color: rgb(73, 121, 122);
+}
+
+/*SCALING IMG FOR LINKS*/
+img {
+  height: 7vh;
+  width: 7vh;
 }
 
 /*EMAIL BUTTON IMPORTED, BY GITHUB
