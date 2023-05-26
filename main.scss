@@ -1,11 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+/*IMPORTING FONT*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,700&display=swap');
 
+/*FUNCTION FOR ALIGNING DIV*/
 @mixin align-center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+/*REMOVE DEFAULT PADDING*/
 * {
   padding: 0;
   margin: 0;
@@ -18,7 +21,7 @@ header{
   top: 0;
   z-index: 999;
   width: 100%;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins";
 }
 
 li{
@@ -45,8 +48,9 @@ a{
   gap: 60px;
 }
 
-.nav-branding {
-  font-size: 1.3rem;
+.nav-branding h1{
+  font-size: 2rem;
+  font-weight: 600;
   z-index: 10;
 }
 
@@ -74,6 +78,7 @@ a{
   background-color: white;
 }
 
+/*HAMBURGER FOR MOBILE*/
 @media(max-width:768px){
   .hamburger{
     display: block;
@@ -162,11 +167,7 @@ body div ul a {
   font-size: 150%;
 }
 
-body h2 {
-  color: white;
-  font-size: 4em;
-}
-
+/*SCALING IMG FOR LINKS*/
 img {
   height: 7vh;
   width: 7vh;
@@ -177,14 +178,21 @@ body {
   font-family: "Poppins", sans-serif;
   color: white;
   
-.headline {
+/*HEADLINES FOR THE BODY*/  
+.headline h2 {
     padding-top: 45vh;
+    font-size: 4rem;
+    font-weight: 600;
+    z-index: 10;
   }
 
-.headline_up {
+.headline_up h2 {
     padding-top: 40vh;
+    color: white;
+    font-size: 2.5em;
   }
-  
+
+/*PAGES AND COLORS*/  
   .parallax_wrapper {
     height: 100vh;
     perspective: 300px;
@@ -213,7 +221,7 @@ body {
 }
 
 
-/* EMAIL BUTTON */
+/*EMAIL BUTTON IMPORTED, BY GITHUB*/
 .email-button {
   appearance: none;
   background-color: rgb(47, 98, 102);
