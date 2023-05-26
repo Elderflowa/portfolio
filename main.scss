@@ -7,6 +7,11 @@
   justify-content: center;
   align-items: center;
 }
+/*FADE IN TEXT ANIMATION*/
+@keyframes fadeIn {
+  0% { opacity: 0;}
+  100% { opacity: 1;}
+}
 
 /*REMOVE DEFAULT PADDING*/
 * {
@@ -104,10 +109,16 @@ a{
     width: 100%;
     text-align: center;
     transition: 0.3s;
+    z-index: -1;
   }
 
   .nav-item{
     margin: 16px 0;
+  }
+
+  .nav-item.active{
+    margin: 16px 0;
+    animation: fadeIn 3s;
   }
 
   .nav-menu.active{
@@ -174,22 +185,23 @@ img {
 }
 
 body {
-  background-color: #333;
+  background-color: #3b3b3b;
   font-family: "Poppins", sans-serif;
   color: white;
   
 /*HEADLINES FOR THE BODY*/  
 .headline h2 {
     padding-top: 45vh;
-    font-size: 4rem;
+    color: white;
+    font-size: 3.5rem;
     font-weight: 600;
-    z-index: 10;
   }
 
 .headline_up h2 {
     padding-top: 40vh;
     color: white;
-    font-size: 2.5em;
+    font-size: 3.5em;
+    font-weight: 600;
   }
 
 /*PAGES AND COLORS*/  
@@ -221,7 +233,8 @@ body {
 }
 
 
-/*EMAIL BUTTON IMPORTED, BY GITHUB*/
+/*EMAIL BUTTON IMPORTED, BY GITHUB
+https://getcssscan.com/css-buttons-examples*/
 .email-button {
   appearance: none;
   background-color: rgb(47, 98, 102);
@@ -247,28 +260,6 @@ body {
   white-space: nowrap;
 }
 
-.button-3:focus:not(:focus-visible):not(.focus-visible) {
-  box-shadow: none;
-  outline: none;
-}
-
-.button-3:hover {
-  background-color: #2c974b;
-}
-
-.button-3:focus {
-  box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
-  outline: none;
-}
-
-.button-3:disabled {
-  background-color: #94d3a2;
-  border-color: rgba(27, 31, 35, .1);
-  color: rgba(255, 255, 255, .8);
-  cursor: default;
-}
-
-.button-3:active {
-  background-color: #298e46;
-  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+.email-button:hover {
+  background-color: rgb(31, 118, 124);
 }
