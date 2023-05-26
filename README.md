@@ -1,1 +1,1 @@
-This is my personal website repository.
+This is my personal portfolio website repository.

@@ -7,6 +7,7 @@
   justify-content: center;
   align-items: center;
 }
+
 /*FADE IN TEXT ANIMATION*/
 @keyframes fadeIn {
   0% {
@@ -24,6 +25,7 @@
   box-sizing: border-box;
 }
 
+/*SIMPLE ADJUSTMENTS*/
 header {
   background-color: #333;
   position: fixed;
@@ -42,6 +44,7 @@ a {
   text-decoration: none;
 }
 
+/*NAVIGATION BAR*/
 .navbar {
   min-height: 70px;
   display: flex;
@@ -169,6 +172,7 @@ a {
 }
 */
 
+/*BODY*/
 body div ul {
   display: flex;
   justify-content: center;
@@ -180,12 +184,6 @@ body div ul a {
   color: white;
   padding: 0 1vh;
   font-size: 150%;
-}
-
-/*SCALING IMG FOR LINKS*/
-img {
-  height: 7vh;
-  width: 7vh;
 }
 
 body {
@@ -234,6 +232,12 @@ body {
       background-color: rgb(73, 121, 122);
     }
   }
+}
+
+/*SCALING IMG FOR LINKS*/
+img {
+  height: 7vh;
+  width: 7vh;
 }
 
 /*EMAIL BUTTON IMPORTED, BY GITHUB
