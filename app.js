@@ -1,11 +1,11 @@
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
-const navItem = document.querySelector(".nav-item");
+const navFade = document.querySelector(".nav-menu-fade");
 
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
   navMenu.classList.toggle("active");
-  navItem.classList.toggle("active");
+  navFade.classList.toggle("active");
 });
 
 document.querySelectorAll(".nav-link").forEach((n) =>
@@ -13,15 +13,6 @@ document.querySelectorAll(".nav-link").forEach((n) =>
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
     navItem.classList.remove("active");
+    
   })
 );
-
-document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-  anchor.addEventListener("click", function (e) {
-    e.preventDefault();
-
-    document.querySelector(this.getAttribute("href")).scrollIntoView({
-      behavior: "smooth",
-    });
-  });
-});

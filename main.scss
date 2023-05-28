@@ -8,6 +8,11 @@
   align-items: center;
 }
 
+/*SMOOTH SCROLL*/
+html {
+  scroll-behavior:smooth
+}
+
 /*FADE IN TEXT ANIMATION*/
 @keyframes fadeIn {
   0% {
@@ -27,7 +32,6 @@
 
 /*SIMPLE ADJUSTMENTS*/
 header {
-  background-color: #333;
   position: fixed;
   top: 0;
   z-index: 999;
@@ -46,6 +50,7 @@ a {
 
 /*NAVIGATION BAR*/
 .navbar {
+  background-color: #333;
   min-height: 70px;
   display: flex;
   justify-content: space-between;
@@ -112,7 +117,7 @@ a {
     left: 0;
     gap: 0;
     flex-direction: column;
-    background-color: #333;
+    background-color: #3b3b3b;
     width: 100%;
     text-align: center;
     transition: 0.3s;
@@ -125,7 +130,7 @@ a {
 
   .nav-item.active {
     margin: 16px 0;
-    animation: fadeIn 3s;
+    animation: fadeIn 5s;
   }
 
   .nav-menu.active {
@@ -251,14 +256,19 @@ https://getcssscan.com/css-buttons-examples*/
   box-sizing: border-box;
   color: #fff;
   cursor: pointer;
-  display: inline-block;
+  display: inline-flex;
   font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial,
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   font-size: 14px;
   font-weight: 600;
   line-height: 20px;
-  padding: 6px 16px;
+  padding-right: 12px;
+  padding-left: 0px;
+  padding-top: 4px;
+  padding-bottom: 4px;
   position: relative;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   text-decoration: none;
   user-select: none;
@@ -270,4 +280,18 @@ https://getcssscan.com/css-buttons-examples*/
 
 .email-button:hover {
   background-color: rgb(31, 118, 124);
+}
+
+/*EMAIL ICON BUTTON*/
+.email-icon {
+  background-color: transparent;
+  fill: #fff;
+  pointer-events: none;
+  width: auto;
+  height: auto;
+  padding-left: 10px;
+  padding-right: 2px;
+  position:relative;
+  top: 2px;
+  left: -2px;
 }
