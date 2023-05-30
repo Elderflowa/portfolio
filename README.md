@@ -1,1 +1,1 @@
-This is my "personal portfolio website"-project repository.
+This is my "portfolio website"-project repository.
