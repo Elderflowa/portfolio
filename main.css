@@ -237,6 +237,11 @@ body {
   color: white;
   /*HEADLINES FOR THE BODY*/
   /*PAGES AND COLORS*/
+  /*SCALING IMG FOR LINKS*/
+  /*EMAIL BUTTON IMPORTED, BY GITHUB
+  https://getcssscan.com/css-buttons-examples*/
+  /*EMAIL ICON BUTTON*/
+  /*BACK TO SAFETY BUTTON*/
 }
 body .headline h2 {
   padding-top: 45vh;
@@ -337,16 +342,18 @@ body .parallax_wrapper .link_screen {
   /*background-color: rgb(73, 121, 122);*/
   text-align: center;
 }
-
-/*SCALING IMG FOR LINKS*/
-img {
+body .parallax_wrapper .blank_screen {
+  height: 100vh;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(65, 65, 65);
+}
+body img {
   height: 7vh;
   width: 7vh;
 }
-
-/*EMAIL BUTTON IMPORTED, BY GITHUB
-https://getcssscan.com/css-buttons-examples*/
-.email-button {
+body .email-button {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -379,13 +386,10 @@ https://getcssscan.com/css-buttons-examples*/
   vertical-align: middle;
   white-space: nowrap;
 }
-
-.email-button:hover {
+body .email-button:hover {
   background-color: rgb(31, 118, 124);
 }
-
-/*EMAIL ICON BUTTON*/
-.email-icon {
+body .email-icon {
   background-color: transparent;
   fill: #fff;
   pointer-events: none;
@@ -396,4 +400,37 @@ https://getcssscan.com/css-buttons-examples*/
   position: relative;
   top: 2px;
   left: -2px;
+}
+body .back-button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: rgb(0, 149, 160);
+  /*background-color: rgb(47, 98, 102);*/
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding-right: 12px;
+  padding-left: 12px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
 }/*# sourceMappingURL=main.css.map */

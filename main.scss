@@ -62,7 +62,7 @@ a {
   padding: 15px;
   border-radius: 4px;
   scale: 80%;
-} 
+}
 
 .quick-two {
   display: none;
@@ -78,7 +78,7 @@ a {
   padding: 15px;
   border-radius: 4px;
   scale: 80%;
-} 
+}
 
 .scroll-button {
   display: none;
@@ -94,7 +94,7 @@ a {
   padding: 15px;
   border-radius: 4px;
   scale: 80%;
-} 
+}
 
 /*NAVIGATION BAR*/
 .navbar {
@@ -368,63 +368,104 @@ body {
       /*background-color: rgb(73, 121, 122);*/
       text-align: center;
     }
+
+    .blank_screen {
+      height: 100vh;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(65, 65, 65);
+    }
   }
-}
 
-/*SCALING IMG FOR LINKS*/
-img {
-  height: 7vh;
-  width: 7vh;
-}
+  /*SCALING IMG FOR LINKS*/
+  img {
+    height: 7vh;
+    width: 7vh;
+  }
 
-/*EMAIL BUTTON IMPORTED, BY GITHUB
+  /*EMAIL BUTTON IMPORTED, BY GITHUB
 https://getcssscan.com/css-buttons-examples*/
-.email-button {
-  appearance: none;
-  background-color: rgb(0, 149, 160);
-  /*background-color: rgb(47, 98, 102);*/
-  border: 1px solid rgba(27, 31, 35, 0.15);
-  border-radius: 6px;
-  box-shadow: rgba(27, 31, 35, 0.1) 0 1px 0;
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
-  display: inline-flex;
-  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial,
-    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 20px;
-  padding-right: 12px;
-  padding-left: 0px;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  vertical-align: middle;
-  white-space: nowrap;
-}
+  .email-button {
+    appearance: none;
+    background-color: rgb(0, 149, 160);
+    /*background-color: rgb(47, 98, 102);*/
+    border: 1px solid rgba(27, 31, 35, 0.15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, 0.1) 0 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial,
+      sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding-right: 12px;
+    padding-left: 0px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
 
-.email-button:hover {
-  background-color: rgb(31, 118, 124);
-}
+  .email-button:hover {
+    background-color: rgb(31, 118, 124);
+  }
 
-/*EMAIL ICON BUTTON*/
-.email-icon {
-  background-color: transparent;
-  fill: #fff;
-  pointer-events: none;
-  width: auto;
-  height: auto;
-  padding-left: 10px;
-  padding-right: 2px;
-  position: relative;
-  top: 2px;
-  left: -2px;
+  /*EMAIL ICON BUTTON*/
+  .email-icon {
+    background-color: transparent;
+    fill: #fff;
+    pointer-events: none;
+    width: auto;
+    height: auto;
+    padding-left: 10px;
+    padding-right: 2px;
+    position: relative;
+    top: 2px;
+    left: -2px;
+  }
+
+  /*BACK TO SAFETY BUTTON*/
+  .back-button {
+    appearance: none;
+    background-color: rgb(0, 149, 160);
+    /*background-color: rgb(47, 98, 102);*/
+    border: 1px solid rgba(27, 31, 35, 0.15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, 0.1) 0 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial,
+      sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding-right: 12px;
+    padding-left: 12px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
 }
