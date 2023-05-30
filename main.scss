@@ -10,7 +10,7 @@
 
 /*SMOOTH SCROLL*/
 html {
-  scroll-behavior:smooth
+  scroll-behavior: smooth;
 }
 
 /*FADE IN TEXT ANIMATION*/
@@ -47,6 +47,54 @@ a {
   color: white;
   text-decoration: none;
 }
+
+.quick-one {
+  display: none;
+  position: fixed;
+  bottom: 0px;
+  left: 80px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+  scale: 80%;
+} 
+
+.quick-two {
+  display: none;
+  position: fixed;
+  bottom: 0px;
+  left: 10px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+  scale: 80%;
+} 
+
+.scroll-button {
+  display: none;
+  position: fixed;
+  bottom: 0px;
+  right: 10px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+  scale: 80%;
+} 
 
 /*NAVIGATION BAR*/
 .navbar {
@@ -97,6 +145,10 @@ a {
 
 /*HAMBURGER FOR MOBILE*/
 @media (max-width: 768px) {
+  .animation-text {
+    scale: 70%;
+  }
+
   .hamburger {
     display: block;
   }
@@ -177,14 +229,20 @@ a {
 }
 */
 
+@media (max-width: 450px) {
+  .animation-text {
+    scale: 50%;
+  }
+}
+
 /*BODY*/
-body div ul {
+.link_screen ul {
   display: flex;
   justify-content: center;
   list-style: none;
 }
 
-body div ul a {
+.link_screen ul a {
   text-decoration: none;
   color: white;
   padding: 0 1vh;
@@ -215,26 +273,100 @@ body {
   .parallax_wrapper {
     height: 100vh;
     perspective: 300px;
-    text-align: center;
 
     .home_screen {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       height: 100vh;
-      background-color: rgb(119, 195, 197);
+      background-image: url("/Images/welcomegrey.png");
+      /*background-image: url("/Images/welcomeanimatedoverlay.png");*/
+      background-position: center;
+      background-color: rgb(95, 158, 160);
+
+      .animation-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 60px;
+        font-weight: 600;
+
+        .first-text {
+          font-size: 60px;
+          position: relative;
+        }
+
+        .sec-texts {
+          height: 90px;
+          line-height: 90px;
+          overflow: hidden;
+        }
+
+        .sec-texts li {
+          position: relative;
+          top: 0;
+          font-size: 60px;
+          color: #90f6fa;
+          padding: 0 15px;
+          text-shadow: 0 0 7px rgba(0, 238, 255, 0.5);
+          animation: slide 15s steps(5) infinite;
+        }
+
+        /*TYPING ANIMATION: CURSOR*/
+        @keyframes slide {
+          100% {
+            top: -450px;
+          }
+        }
+
+        .sec-texts li span {
+          position: relative;
+        }
+
+        .sec-texts li span::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          width: 290px;
+          height: 90px;
+          background: rgb(74, 74, 74);
+          /*background: rgb(95, 158, 160);*/
+          border-left: 2px solid #0ef;
+          animation: typing 1.5s steps(8) infinite alternate;
+        }
+      }
+    }
+
+    /*TYPING ANIMATION: CURSOR*/
+    @keyframes typing {
+      100% {
+        left: 100%;
+        margin: 0 35px 0 35px;
+      }
     }
 
     .about_screen {
       height: 100vh;
-      background-color: rgb(73, 121, 122);
+      background-color: rgb(65, 65, 65);
+      /*background-color: rgb(73, 121, 122);*/
+      text-align: center;
     }
 
     .contact_screen {
       height: 100vh;
+      background-image: url("/Images/welcomegrey.png");
+      /*background-image: url("/Images/welcomefulloverlay.png");*/
+      background-position: center;
       background-color: rgb(95, 158, 160);
+      background-color: rgb(75, 75, 75);
+      text-align: center;
     }
 
     .link_screen {
       height: 100vh;
-      background-color: rgb(73, 121, 122);
+      background-color: rgb(65, 65, 65);
+      /*background-color: rgb(73, 121, 122);*/
+      text-align: center;
     }
   }
 }
@@ -249,7 +381,8 @@ img {
 https://getcssscan.com/css-buttons-examples*/
 .email-button {
   appearance: none;
-  background-color: rgb(47, 98, 102);
+  background-color: rgb(0, 149, 160);
+  /*background-color: rgb(47, 98, 102);*/
   border: 1px solid rgba(27, 31, 35, 0.15);
   border-radius: 6px;
   box-shadow: rgba(27, 31, 35, 0.1) 0 1px 0;
@@ -291,7 +424,7 @@ https://getcssscan.com/css-buttons-examples*/
   height: auto;
   padding-left: 10px;
   padding-right: 2px;
-  position:relative;
+  position: relative;
   top: 2px;
   left: -2px;
 }
