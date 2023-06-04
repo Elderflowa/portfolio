@@ -218,13 +218,13 @@ a {
   }
 }
 /*BODY*/
-.link_screen ul {
+.services_screen ul {
   display: flex;
   justify-content: center;
   list-style: none;
 }
 
-.link_screen ul a {
+.services_screen ul a {
   text-decoration: none;
   color: white;
   padding: 0 1vh;
@@ -336,7 +336,7 @@ body .parallax_wrapper .contact_screen {
   background-color: rgb(75, 75, 75);
   text-align: center;
 }
-body .parallax_wrapper .link_screen {
+body .parallax_wrapper .services_screen {
   height: 100vh;
   background-color: rgb(65, 65, 65);
   /*background-color: rgb(73, 121, 122);*/
