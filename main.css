@@ -216,6 +216,13 @@ a {
   .animation-text {
     scale: 50%;
   }
+  .services-prices {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .service-price {
+    width: 60vw;
+    height: auto;
+  }
 }
 /*BODY*/
 .services_screen ul {
@@ -341,19 +348,6 @@ body .parallax_wrapper .contact_screen {
   background-color: rgb(75, 75, 75);
   text-align: center;
 }
-body .parallax_wrapper .services_screen {
-  height: 100vh;
-  position: relative;
-  background-color: rgb(65, 65, 65);
-  /*background-color: rgb(73, 121, 122);*/
-  text-align: center;
-}
-body .parallax_wrapper .services_screen .services-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 body .parallax_wrapper .blank_screen {
   height: 100vh;
   text-align: center;
@@ -361,16 +355,26 @@ body .parallax_wrapper .blank_screen {
   align-items: center;
   background-color: rgb(65, 65, 65);
 }
-body .services-prices {
+body .services_screen {
+  height: 100vh;
+  position: relative;
+  background-color: rgb(65, 65, 65);
+  /*background-color: rgb(73, 121, 122);*/
+  text-align: center;
+}
+body .services_screen .services-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body .services_screen .services-prices {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
   gap: 1rem;
-  color: white;
 }
-body .service-price {
-  width: 25vw;
-  height: 20vh;
+body .services_screen .service-price {
   background: cadetblue;
   border-radius: 25px;
   padding: 15px;
@@ -379,6 +383,37 @@ body .service-price {
 body #prices {
   padding-top: 25px;
   gap: 30px;
+}
+@media (min-width: 0px) {
+  body .services-prices {
+    max-width: 1200px;
+  }
+  body .service-price {
+    color: white;
+    height: 6rem;
+    width: 65vw;
+  }
+}
+@media (min-width: 600px) {
+  body .services-prices {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1200px;
+  }
+  body .service-price {
+    color: white;
+    height: 10rem;
+    width: 30vw;
+  }
+}
+@media (min-width: 900px) {
+  body .services-prices {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  body .service-price {
+    color: white;
+    height: 15rem;
+    width: 25vw;
+  }
 }
 body img {
   height: 7vh;

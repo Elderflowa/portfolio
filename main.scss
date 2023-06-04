@@ -233,6 +233,15 @@ a {
   .animation-text {
     scale: 50%;
   }
+
+  .services-prices {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .service-price {
+    width: 60vw;
+    height: auto;
+  }
 }
 
 /*BODY*/
@@ -368,21 +377,6 @@ body {
       text-align: center;
     }
 
-    .services_screen {
-      height: 100vh;
-      position: relative;
-      background-color: rgb(65, 65, 65);
-      /*background-color: rgb(73, 121, 122);*/
-      text-align: center;
-
-      .services-container {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-    }
-
     .blank_screen {
       height: 100vh;
       text-align: center;
@@ -392,28 +386,77 @@ body {
     }
   }
 
-.services-prices {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  gap: 1rem;
-  color: white;
-}
+  .services_screen {
+    height: 100vh;
+    position: relative;
+    background-color: rgb(65, 65, 65);
+    /*background-color: rgb(73, 121, 122);*/
+    text-align: center;
 
-.service-price {
-  width:25vw; 
-  height:20vh;
-  background: cadetblue;
-  border-radius: 25px;
-  padding: 15px;
-  font-weight: 600;
-}
+    .services-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .services-prices {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      gap: 1rem;
+    }
+
+    .service-price {
+      background: cadetblue;
+      border-radius: 25px;
+      padding: 15px;
+      font-weight: 600;
+    }
+  }
+
+  #prices {
+    padding-top: 25px;
+    gap: 30px;
+  }
+
+  @media (min-width: 0px) {
+    .services-prices {
+      max-width: 1200px;
+    }
+
+    .service-price {
+      color: white;
+      height: 6rem;
+      width: 65vw;
+    }
+  }
   
-#prices {
-  padding-top: 25px;
-  gap: 30px;
-}
-  
+  @media (min-width: 600px) {
+    .services-prices {
+      grid-template-columns: repeat(2, 1fr);
+      max-width: 1200px;
+    }
+
+    .service-price {
+      color: white;
+      height: 10rem;
+      width: 30vw;
+    }
+  }
+
+  @media (min-width: 900px) {
+    .services-prices {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .service-price {
+      color: white;
+      height: 15rem;
+      width: 25vw;
+    }
+  }
+
   /*SCALING IMG FOR LINKS*/
   img {
     height: 7vh;
