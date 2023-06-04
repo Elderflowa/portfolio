@@ -362,7 +362,7 @@ body {
       text-align: center;
     }
 
-    .link_screen {
+    .services_screen {
       height: 100vh;
       background-color: rgb(65, 65, 65);
       /*background-color: rgb(73, 121, 122);*/
@@ -376,6 +376,10 @@ body {
       align-items: center;
       background-color: rgb(65, 65, 65);
     }
+  }
+
+  #prices li {
+    padding: 20px;
   }
 
   /*SCALING IMG FOR LINKS*/
