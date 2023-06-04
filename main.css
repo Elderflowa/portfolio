@@ -255,9 +255,14 @@ body .headline_up h2 {
   font-size: 3.5em;
   font-weight: 600;
 }
+body .headline_3 h2 {
+  color: white;
+  font-size: 3.5em;
+  font-weight: 600;
+}
 body .parallax_wrapper {
   height: 100vh;
-  perspective: 300px;
+  /*perspective: 300px;*/
   /*TYPING ANIMATION: CURSOR*/
 }
 body .parallax_wrapper .home_screen {
@@ -338,9 +343,16 @@ body .parallax_wrapper .contact_screen {
 }
 body .parallax_wrapper .services_screen {
   height: 100vh;
+  position: relative;
   background-color: rgb(65, 65, 65);
   /*background-color: rgb(73, 121, 122);*/
   text-align: center;
+}
+body .parallax_wrapper .services_screen .services-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 body .parallax_wrapper .blank_screen {
   height: 100vh;
@@ -348,6 +360,25 @@ body .parallax_wrapper .blank_screen {
   justify-content: center;
   align-items: center;
   background-color: rgb(65, 65, 65);
+}
+body .services-prices {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+  color: white;
+}
+body .service-price {
+  width: 25vw;
+  height: 20vh;
+  background: cadetblue;
+  border-radius: 25px;
+  padding: 15px;
+  font-weight: 600;
+}
+body #prices {
+  padding-top: 25px;
+  gap: 30px;
 }
 body img {
   height: 7vh;

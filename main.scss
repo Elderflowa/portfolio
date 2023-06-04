@@ -269,10 +269,16 @@ body {
     font-weight: 600;
   }
 
+  .headline_3 h2 {
+    color: white;
+    font-size: 3.5em;
+    font-weight: 600;
+  }
+
   /*PAGES AND COLORS*/
   .parallax_wrapper {
     height: 100vh;
-    perspective: 300px;
+    /*perspective: 300px;*/
 
     .home_screen {
       display: flex;
@@ -364,9 +370,17 @@ body {
 
     .services_screen {
       height: 100vh;
+      position: relative;
       background-color: rgb(65, 65, 65);
       /*background-color: rgb(73, 121, 122);*/
       text-align: center;
+
+      .services-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
     }
 
     .blank_screen {
@@ -378,6 +392,28 @@ body {
     }
   }
 
+.services-prices {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+  color: white;
+}
+
+.service-price {
+  width:25vw; 
+  height:20vh;
+  background: cadetblue;
+  border-radius: 25px;
+  padding: 15px;
+  font-weight: 600;
+}
+  
+#prices {
+  padding-top: 25px;
+  gap: 30px;
+}
+  
   /*SCALING IMG FOR LINKS*/
   img {
     height: 7vh;
