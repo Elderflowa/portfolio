@@ -380,6 +380,9 @@ body .services_screen .service-price {
   padding: 15px;
   font-weight: 600;
 }
+body .services_screen .package-stats {
+  color: rgb(168, 240, 242);
+}
 body #prices {
   padding-top: 25px;
   gap: 30px;
@@ -392,6 +395,7 @@ body #prices {
     color: white;
     height: 6rem;
     width: 65vw;
+    font-size: medium;
   }
 }
 @media (min-width: 600px) {
@@ -403,6 +407,7 @@ body #prices {
     color: white;
     height: 10rem;
     width: 30vw;
+    font-size: large;
   }
 }
 @media (min-width: 900px) {
@@ -413,6 +418,7 @@ body #prices {
     color: white;
     height: 15rem;
     width: 25vw;
+    font-size: larger;
   }
 }
 body img {

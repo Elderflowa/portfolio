@@ -413,6 +413,10 @@ body {
       padding: 15px;
       font-weight: 600;
     }
+
+    .package-stats {
+      color: rgb(168, 240, 242);
+    }
   }
 
   #prices {
@@ -429,9 +433,10 @@ body {
       color: white;
       height: 6rem;
       width: 65vw;
+      font-size: medium;
     }
   }
-  
+
   @media (min-width: 600px) {
     .services-prices {
       grid-template-columns: repeat(2, 1fr);
@@ -442,6 +447,7 @@ body {
       color: white;
       height: 10rem;
       width: 30vw;
+      font-size: large;
     }
   }
 
@@ -454,6 +460,7 @@ body {
       color: white;
       height: 15rem;
       width: 25vw;
+      font-size: larger;
     }
   }
 
