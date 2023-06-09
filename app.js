@@ -17,6 +17,15 @@ document.querySelectorAll(".nav-link").forEach((n) =>
   })
 );
 
+document.querySelectorAll(".nav-branding").forEach((n) =>
+  n.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+    navItem.classList.remove("active");
+    
+  })
+);
+
 // Get the button
 let mybutton = document.getElementById("myBtn");
 let mybutton2 = document.getElementById("myBtn2");

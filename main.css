@@ -40,7 +40,7 @@ a {
   text-decoration: none;
 }
 
-.quick-one {
+.quick-action1 {
   display: none;
   position: fixed;
   bottom: 0px;
@@ -54,9 +54,10 @@ a {
   padding: 15px;
   border-radius: 4px;
   scale: 80%;
+  animation: fadeIn 2s;
 }
 
-.quick-two {
+.quick-action2 {
   display: none;
   position: fixed;
   bottom: 0px;
@@ -70,6 +71,7 @@ a {
   padding: 15px;
   border-radius: 4px;
   scale: 80%;
+  animation: fadeIn 2s;
 }
 
 .scroll-button {
@@ -86,6 +88,7 @@ a {
   padding: 15px;
   border-radius: 4px;
   scale: 80%;
+  animation: fadeIn 2s;
 }
 
 /*NAVIGATION BAR*/
@@ -102,7 +105,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 60px;
+  gap: 40px; /*DEFAULT IS 60px*/
 }
 
 .nav-branding h1 {
@@ -117,6 +120,18 @@ a {
 
 .nav-link:hover {
   color: cadetblue;
+}
+
+#click-me {
+  display: none;
+  cursor: pointer;
+  z-index: 10;
+}
+
+#nav-about-me {
+  display: none;
+  cursor: pointer;
+  z-index: 10;
 }
 
 .hamburger {
@@ -136,8 +151,11 @@ a {
 
 /*HAMBURGER FOR MOBILE*/
 @media (max-width: 768px) {
-  .animation-text {
-    scale: 70%;
+  #click-me {
+    display: block;
+  }
+  #nav-about-me {
+    display: block;
   }
   .hamburger {
     display: block;
@@ -327,6 +345,26 @@ body .parallax_wrapper .home_screen .animation-text .sec-texts li span::before {
   border-left: 2px solid #0ef;
   animation: typing 1.5s steps(8) infinite alternate;
 }
+@media (max-width: 680px) {
+  body .parallax_wrapper .animation-text {
+    scale: 80%;
+  }
+  body .parallax_wrapper .animation-text .first-text {
+    font-size: 60px;
+    left: 100px;
+  }
+  body .parallax_wrapper .animation-text .sec-texts {
+    color: white;
+    position: relative;
+    top: 90px;
+    left: -200px;
+  }
+}
+@media (max-width: 450px) {
+  body .parallax_wrapper .animation-text {
+    scale: 70%;
+  }
+}
 @keyframes typing {
   100% {
     left: 100%;
@@ -375,10 +413,11 @@ body .services_screen .services-prices {
   gap: 1rem;
 }
 body .services_screen .service-price {
-  background: cadetblue;
   border-radius: 25px;
-  padding: 15px;
   font-weight: 600;
+  background-color: cadetblue;
+  border: 3px solid rgba(27, 31, 35, 0.15);
+  box-shadow: rgba(27, 31, 35, 0.1) 0 6px 0;
 }
 body .services_screen .package-stats {
   color: rgb(168, 240, 242);
@@ -396,6 +435,7 @@ body #prices {
     height: 6rem;
     width: 65vw;
     font-size: medium;
+    padding: 7px;
   }
 }
 @media (min-width: 600px) {
@@ -408,17 +448,19 @@ body #prices {
     height: 10rem;
     width: 30vw;
     font-size: large;
+    padding: 30px;
   }
 }
-@media (min-width: 900px) {
+@media (min-width: 1250px) {
   body .services-prices {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
   body .service-price {
     color: white;
     height: 15rem;
     width: 25vw;
     font-size: larger;
+    padding: 65px;
   }
 }
 body img {
@@ -429,16 +471,17 @@ body .email-button {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  background-color: rgb(0, 149, 160);
-  /*background-color: rgb(47, 98, 102);*/
-  border: 1px solid rgba(27, 31, 35, 0.15);
-  border-radius: 6px;
-  box-shadow: rgba(27, 31, 35, 0.1) 0 1px 0;
-  box-sizing: border-box;
+  background-color: cadetblue;
+  padding: 15px;
+  font-weight: 600;
+  background-color: cadetblue;
+  border: 3px solid rgba(27, 31, 35, 0.15);
+  box-shadow: rgba(27, 31, 35, 0.1) 0 6px 0;
+  border-radius: 7px;
   color: #fff;
   cursor: pointer;
   display: inline-flex;
-  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-family: "Poppins";
   font-size: 14px;
   font-weight: 600;
   line-height: 20px;
@@ -457,6 +500,7 @@ body .email-button {
   touch-action: manipulation;
   vertical-align: middle;
   white-space: nowrap;
+  scale: 1.1;
 }
 body .email-button:hover {
   background-color: rgb(31, 118, 124);
@@ -505,4 +549,5 @@ body .back-button {
   touch-action: manipulation;
   vertical-align: middle;
   white-space: nowrap;
+  scale: 1.2;
 }/*# sourceMappingURL=main.css.map */
