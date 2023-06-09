@@ -216,15 +216,22 @@ a {
   .animation-text {
     scale: 50%;
   }
+  .services-prices {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .service-price {
+    width: 60vw;
+    height: auto;
+  }
 }
 /*BODY*/
-.link_screen ul {
+.services_screen ul {
   display: flex;
   justify-content: center;
   list-style: none;
 }
 
-.link_screen ul a {
+.services_screen ul a {
   text-decoration: none;
   color: white;
   padding: 0 1vh;
@@ -255,9 +262,14 @@ body .headline_up h2 {
   font-size: 3.5em;
   font-weight: 600;
 }
+body .headline_3 h2 {
+  color: white;
+  font-size: 3.5em;
+  font-weight: 600;
+}
 body .parallax_wrapper {
   height: 100vh;
-  perspective: 300px;
+  /*perspective: 300px;*/
   /*TYPING ANIMATION: CURSOR*/
 }
 body .parallax_wrapper .home_screen {
@@ -265,7 +277,7 @@ body .parallax_wrapper .home_screen {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url("/Images/welcomegrey.png");
+  background-image: url("./Images/welcomegrey.png");
   /*background-image: url("/Images/welcomeanimatedoverlay.png");*/
   background-position: center;
   background-color: rgb(95, 158, 160);
@@ -329,17 +341,11 @@ body .parallax_wrapper .about_screen {
 }
 body .parallax_wrapper .contact_screen {
   height: 100vh;
-  background-image: url("/Images/welcomegrey.png");
+  background-image: url("./Images/welcomegrey.png");
   /*background-image: url("/Images/welcomefulloverlay.png");*/
   background-position: center;
   background-color: rgb(95, 158, 160);
   background-color: rgb(75, 75, 75);
-  text-align: center;
-}
-body .parallax_wrapper .link_screen {
-  height: 100vh;
-  background-color: rgb(65, 65, 65);
-  /*background-color: rgb(73, 121, 122);*/
   text-align: center;
 }
 body .parallax_wrapper .blank_screen {
@@ -348,6 +354,72 @@ body .parallax_wrapper .blank_screen {
   justify-content: center;
   align-items: center;
   background-color: rgb(65, 65, 65);
+}
+body .services_screen {
+  height: 100vh;
+  position: relative;
+  background-color: rgb(65, 65, 65);
+  /*background-color: rgb(73, 121, 122);*/
+  text-align: center;
+}
+body .services_screen .services-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body .services_screen .services-prices {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+}
+body .services_screen .service-price {
+  background: cadetblue;
+  border-radius: 25px;
+  padding: 15px;
+  font-weight: 600;
+}
+body .services_screen .package-stats {
+  color: rgb(168, 240, 242);
+}
+body #prices {
+  padding-top: 25px;
+  gap: 30px;
+}
+@media (min-width: 0px) {
+  body .services-prices {
+    max-width: 1200px;
+  }
+  body .service-price {
+    color: white;
+    height: 6rem;
+    width: 65vw;
+    font-size: medium;
+  }
+}
+@media (min-width: 600px) {
+  body .services-prices {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1200px;
+  }
+  body .service-price {
+    color: white;
+    height: 10rem;
+    width: 30vw;
+    font-size: large;
+  }
+}
+@media (min-width: 900px) {
+  body .services-prices {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  body .service-price {
+    color: white;
+    height: 15rem;
+    width: 25vw;
+    font-size: larger;
+  }
 }
 body img {
   height: 7vh;
