@@ -44,23 +44,6 @@ a {
   display: none;
   position: fixed;
   bottom: 0px;
-  left: 80px;
-  z-index: 99;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  color: white;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 4px;
-  scale: 80%;
-  animation: fadeIn 2s;
-}
-
-.quick-action2 {
-  display: none;
-  position: fixed;
-  bottom: 0px;
   left: 10px;
   z-index: 99;
   font-size: 18px;
@@ -74,6 +57,22 @@ a {
   animation: fadeIn 2s;
 }
 
+/*.quick-action2 {
+  display: none;
+  position: fixed;
+  bottom: 0px;
+  left: 180px; DEFAULT 80px
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+  scale: 80%;
+  animation: fadeIn 2s;
+}*/
 .scroll-button {
   display: none;
   position: fixed;
@@ -89,6 +88,17 @@ a {
   border-radius: 4px;
   scale: 80%;
   animation: fadeIn 2s;
+}
+
+/*SCALING IMG FOR LINKS*/
+.square-img {
+  height: 7vh;
+  width: 7vh;
+}
+
+#homemade {
+  height: 7vh;
+  width: auto;
 }
 
 /*NAVIGATION BAR*/
@@ -262,7 +272,6 @@ body {
   color: white;
   /*HEADLINES FOR THE BODY*/
   /*PAGES AND COLORS*/
-  /*SCALING IMG FOR LINKS*/
   /*EMAIL BUTTON IMPORTED, BY GITHUB
   https://getcssscan.com/css-buttons-examples*/
   /*EMAIL ICON BUTTON*/
@@ -463,10 +472,6 @@ body #prices {
     padding: 65px;
   }
 }
-body img {
-  height: 7vh;
-  width: 7vh;
-}
 body .email-button {
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -521,12 +526,13 @@ body .back-button {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  background-color: rgb(0, 149, 160);
-  /*background-color: rgb(47, 98, 102);*/
-  border: 1px solid rgba(27, 31, 35, 0.15);
-  border-radius: 6px;
-  box-shadow: rgba(27, 31, 35, 0.1) 0 1px 0;
-  box-sizing: border-box;
+  background-color: cadetblue;
+  padding: 15px;
+  font-weight: 600;
+  background-color: cadetblue;
+  border: 3px solid rgba(27, 31, 35, 0.15);
+  box-shadow: rgba(27, 31, 35, 0.1) 0 6px 0;
+  border-radius: 7px;
   color: #fff;
   cursor: pointer;
   display: inline-flex;
