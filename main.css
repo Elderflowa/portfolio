@@ -244,7 +244,7 @@ a {
   .animation-text {
     scale: 50%;
   }
-  .services-prices {
+  .prices-container {
     grid-template-columns: repeat(1, 1fr);
   }
   .service-price {
@@ -415,7 +415,7 @@ body .services_screen .services-container {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-body .services_screen .services-prices {
+body .services_screen .prices-container {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
@@ -428,6 +428,10 @@ body .services_screen .service-price {
   border: 3px solid rgba(27, 31, 35, 0.15);
   box-shadow: rgba(27, 31, 35, 0.1) 0 6px 0;
 }
+body .services_screen .service-price:hover {
+  transform: scale(1.1);
+  transition: 0.2s linear;
+}
 body .services_screen .package-stats {
   color: rgb(168, 240, 242);
 }
@@ -436,7 +440,7 @@ body #prices {
   gap: 30px;
 }
 @media (min-width: 0px) {
-  body .services-prices {
+  body .prices-container {
     max-width: 1200px;
   }
   body .service-price {
@@ -448,7 +452,7 @@ body #prices {
   }
 }
 @media (min-width: 600px) {
-  body .services-prices {
+  body .prices-container {
     grid-template-columns: repeat(2, 1fr);
     max-width: 1200px;
   }
@@ -461,7 +465,7 @@ body #prices {
   }
 }
 @media (min-width: 1250px) {
-  body .services-prices {
+  body .prices-container {
     grid-template-columns: repeat(2, 1fr);
   }
   body .service-price {
