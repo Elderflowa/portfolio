@@ -28,6 +28,7 @@ html {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  transition: all .2s linear;
 }
 
 /*SIMPLE ADJUSTMENTS*/
@@ -99,16 +100,16 @@ a {
   animation: fadeIn 2s;
 }
 
-  /*SCALING IMG FOR LINKS*/
-  .square-img {
-    height: 7vh;
-    width: 7vh;
-  }
+/*SCALING IMG FOR LINKS*/
+.square-img {
+  height: 7vh;
+  width: 7vh;
+}
 
-  #homemade {
-    height: 7vh;
-    width: auto;
-  }
+#homemade {
+  height: 7vh;
+  width: auto;
+}
 
 /*NAVIGATION BAR*/
 .navbar {
@@ -268,25 +269,13 @@ a {
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .service-price {
+  .package {
     width: 60vw;
     height: auto;
   }
 }
 
 /*BODY*/
-.services_screen ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-}
-
-.services_screen ul a {
-  text-decoration: none;
-  color: white;
-  padding: 0 1vh;
-  font-size: 150%;
-}
 
 body {
   background-color: #3b3b3b;
@@ -303,12 +292,6 @@ body {
 
   .headline_up h2 {
     padding-top: 40vh;
-    color: white;
-    font-size: 3.5em;
-    font-weight: 600;
-  }
-
-  .headline_3 h2 {
     color: white;
     font-size: 3.5em;
     font-weight: 600;
@@ -454,78 +437,165 @@ body {
       transform: translate(-50%, -50%);
     }
 
-    .prices-container {
+    .services-paragraph2{
+      padding-top: 15px;
+    }
+
+    .headline_services h2 {
+      color: white;
+      font-size: 3.5em;
+      font-weight: 600;
+      padding-bottom: 0;
+    }
+
+    .package-container {
       max-width: 1200px;
       margin: 0 auto;
       display: grid;
       gap: 1rem;
     }
 
-    .service-price {
+    .package {
       border-radius: 25px;
       font-weight: 600;
       background-color: cadetblue;
       border: 3px solid rgba(27, 31, 35, 0.15);
       box-shadow: rgba(27, 31, 35, 0.1) 0 6px 0;
+      cursor: pointer;
     }
 
-    .service-price:hover {
-      transform: scale(1.1);
-      transition: .2s linear;
+    .package:hover {
+      transform: scale(1.05);
+      background-color: rgb(82, 135, 138);
+      border: 3px solid rgb(61, 104, 106);
     }
 
-    
-
-    .package-stats {
+    .package-info {
+      list-style: none;
       color: rgb(168, 240, 242);
+
+      .package-price {
+        position: relative;
+        color: white;
+      }
+    }
+
+    .package-info a {
+      text-decoration: none;
+      color: white;
+      //padding: 0 1vh;//
+      font-size: 150%;
     }
   }
 
-  #prices {
-    padding-top: 25px;
+  #packages {
+    padding-bottom: 25px;
     gap: 30px;
+  }
+  #packages:not(:last-child) {
+    padding-bottom: 0px;
+  }
+
+  //PACKAGE PREVIEW//
+  .packages-preview {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    .package-price{
+      position: relative;
+      padding-top: 10px;
+      bottom: -10px;
+    }
+  }
+
+  .packages-preview .preview {
+    display: none;
+    padding: 2rem;
+    text-align: center;
+    background: cadetblue;
+    position: relative;
+    margin: 2rem;
+    width: 40rem;
+    border-radius: 25px;
+    border: 3px solid rgba(27, 31, 35, 0.15);
+  }
+
+  .packages-preview .preview.active {
+    display: inline-block;
+  }
+
+  .packages-preview .preview .fa-times{
+    position: absolute;
+    top: 1rem; 
+    right: 1.5rem;
+    cursor: pointer;
+    color: #fff;
+    font-size: 2rem;
+  }
+
+  .packages-preview .preview .fa-times:hover{
+    transform: rotate(90deg);
   }
 
   @media (min-width: 0px) {
-    .prices-container {
+    .package-container {
       max-width: 1200px;
     }
 
-    .service-price {
+    .package {
       color: white;
       height: 6rem;
       width: 65vw;
       font-size: medium;
       padding: 7px;
+
+      .package-info .package-price {
+        bottom: 0px;
+      }
     }
   }
 
   @media (min-width: 600px) {
-    .prices-container {
+    .package-container {
       grid-template-columns: repeat(2, 1fr);
       max-width: 1200px;
     }
 
-    .service-price {
+    .package {
       color: white;
       height: 10rem;
       width: 30vw;
       font-size: large;
       padding: 30px;
+
+      .package-info .package-price {
+        bottom: -20px;
+      }
     }
   }
 
   @media (min-width: 1250px) {
-    .prices-container {
+    .package-container {
       grid-template-columns: repeat(2, 1fr);
     }
 
-    .service-price {
+    .package {
       color: white;
       height: 15rem;
       width: 25vw;
       font-size: larger;
       padding: 65px;
+
+      .package-info .package-price {
+        bottom: -20px;
+      }
     }
   }
 
@@ -565,7 +635,8 @@ https://getcssscan.com/css-buttons-examples*/
   }
 
   .email-button:hover {
-    background-color: rgb(31, 118, 124);
+    background-color: rgb(82, 135, 138);
+    border: 3px solid rgb(61, 104, 106);
   }
 
   /*EMAIL ICON BUTTON*/

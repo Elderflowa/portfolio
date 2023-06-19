@@ -53,4 +53,26 @@ function topFunction() {
 }
 
 //SERVICES ENLARGE
+let previewContainer = document.querySelector(".packages-preview");
+let previewBox = previewContainer.querySelectorAll(".preview");
 
+document.querySelectorAll(".package-container .package").forEach(package =>{
+  package.onclick = () =>{
+    previewContainer.style.display = "flex";
+    previewContainer.style.transitionDelay=".3s";
+    let name = package.getAttribute("data-name");
+    previewBox.forEach(preview =>{
+      let target = preview.getAttribute("data-target");
+      if(name == target){
+        preview.classList.add("active");
+      }
+    })
+  };
+});
+
+previewBox.forEach(close =>{
+  close.querySelector(".fa-times").onclick = () =>{
+    close.classList.remove("active");
+    previewContainer.style.display = "none";
+  };
+});

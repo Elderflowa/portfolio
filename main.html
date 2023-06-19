@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="main.css" />
+    <script src="app.js" defer></script>
     <link rel="icon" type="image/x-icon" href="./Images/vectorlogo.png" />
     <title>ELDR</title>
   </head>
@@ -61,7 +63,7 @@
       <img class="square-img" src="./Images/backtotop1.png" />
     </a>
   </header>
-  <script src="app.js"></script>
+  
   <body>
     <div class="parallax_wrapper">
       <div class="parallax_group home_screen" id="home">
@@ -113,40 +115,81 @@
 
       <div class="services_screen" id="services">
         <div class="services-container">
-          <div class="headline_3"><h2>Services</h2></div>
+          <div class="headline_services"><h2>Services</h2></div>
+          
           <div>
-            <p class="services-paragraph">Short introduction paragraph.</p>
-            <ul class="prices-container" id="prices">
-              <div class="service-price">
-                <li>Simple</li>
-                <ol class="package-stats">
-                  <li>1 revision</li>
-                  <li class="price-tag">250$</li>
-                </ol>
+            <!--<p class="services-paragraph">Short introduction paragraph.</p>-->
+            <div class="package-container" id="packages">
+              
+              <div class="package" data-name="p-1">
+                <div class="package-title">Simple</div>
+                <div class="package-info">
+                  <div>1 revision</div>
+                  <div class="package-price">250$</div>
+                </div>
               </div>
-              <div class="service-price">
-                <li>Advanced</li>
-                <ol class="package-stats">
-                  <li>3 revisions</li>
-                  <li class="price-tag">Price 500$</li>
-                </ol>
+              
+              <div class="package" data-name="p-2">
+                <div class="package-title">Advanced</div>
+                <div class="package-info">
+                  <div>3 revisions</div>
+                  <div class="package-price">500$</div>
+                </div>
               </div>
-              <div class="service-price">
-                <li>Professional</li>
-                <ol class="package-stats">
-                  <li>5 revisions</li>
-                  <li class="price-tag">Price 750$</li>
-                </ol>  
+              
+              <div class="package" data-name="p-3">
+                <div class="package-title">Professional</div>
+                <div class="package-info">
+                  <div>5 revisions</div>
+                  <div class="package-price">750$</div>
+                </div>  
               </div>
-              <div class="service-price">
-                <li>Maintinence <br>Package</li>
-                <ol class="package-stats">
-                  <li class="price-tag">Price 200$</li>
-                </ol>  
+              
+              <div class="package" data-name="p-4">
+                <div class="package-title">Maintinence</div>
+                <div class="package-info">
+                  <div>ELDR*</div>
+                  <div class="package-price">200$</div>
+                </div>  
               </div>
-            </ul>
+
+            </div>
+            <p class="services-paragraph2">Click on a package to read more.</p>
           </div>
         </div>
+
+        <div class="packages-preview">
+
+          <div class="preview" data-target="p-1">
+            <i class="fas fa-times"></i>
+            <h3 class="package-title">Simple</h3>
+            <div class="package-info">1 revision Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. <br>Cum sociis natoque penatibus et magnis dis parturient.</div>
+            <div class="package-price">250$</div>
+          </div>
+
+          <div class="preview" data-target="p-2">
+            <i class="fas fa-times"></i>
+            <h3 class="package-title">Advanced</h3>
+            <div class="package-info">3 revisions Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. <br>Cum sociis natoque penatibus et magnis dis parturient.</div>
+            <div class="package-price">500$</div>
+          </div>
+
+          <div class="preview" data-target="p-3">
+            <i class="fas fa-times"></i>
+            <h3 class="package-title">Professional</h3>
+            <div class="package-info">5 revisions Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. <br>Cum sociis natoque penatibus et magnis dis parturient.</div>
+            <div class="package-price">750$</div>
+          </div>
+
+          <div class="preview" data-target="p-4">
+            <i class="fas fa-times"></i>
+            <h3 class="package-title">Maintinence</h3>
+            <div class="package-info">ELDR projects only* Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. <br>Cum sociis natoque penatibus et magnis dis parturient.</div>
+            <div class="package-price">200$</div>
+          </div>
+
+        </div>
+
       </div>
     </div>
   </body>
