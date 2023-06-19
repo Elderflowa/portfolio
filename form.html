@@ -68,44 +68,71 @@
       <div class="form_screen" id="formular">
         <div class="form-container">
           <div class="form-headline"><h2>Let's do business!</h2></div>
-
-          <div class="form-group">
-            <label for="firstName">First Name:</label>
-            <input style="font-family: Poppins" type="text" id="firstName" name="firstName" />
-          </div>
-
-          <div class="form-group">
-            <label for="lastName">Last Name:</label>
-            <input style="font-family: Poppins" type="text" id="lastName" name="lastName" />
-          </div>
-
-          <span class="email-container">
-            <section class="package-type form-group">
-              <label for="select-package">Select package:</label>
-              <select
+          
+          <form action="https://formspree.io/f/mjvdnlgl" method="post">
+            <div class="form-group">
+              <label for="firstName">First Name:</label>
+              <input
                 style="font-family: Poppins"
-                class="select-package"
-                id="selector"
-              >
-                <option value="simple">Simple 250$</option>
-                <option value="advanced">Advanced 500$</option>
-                <option value="professional">Professional 750$</option>
-                <option value="maintinence">Maintinence 200$</option>
-              </select>
-            </section>
+                type="text"
+                id="firstName"
+                name="firstName"
+              />
+            </div>
 
             <div class="form-group">
-              <label for="email">Email:</label>
-              <input style="font-family: Poppins" type="email" id="email" name="email" />
+              <label for="lastName">Last Name:</label>
+              <input
+                style="font-family: Poppins"
+                type="text"
+                id="lastName"
+                name="lastName"
+              />
             </div>
-          </span>
 
-          <div class="form-group">
-            <label style="float: left" for="message">Message:</label>
-            <br />
-            <textarea style="font-family: Poppins" placeholder="Write something here..." name="message" id="message" cols="80" rows="6"></textarea>
-          </div>
+            <div>
+              <input name="subject" type="hidden" value="New order from {{ name }}" />
+            </div>
 
+            <span class="email-container">
+              <section class="package-type form-group">
+                <label for="select-package">Select package:</label>
+                <select
+                  style="font-family: Poppins"
+                  class="select-package"
+                  id="selector"
+                >
+                  <option value="simple">Simple 250$</option>
+                  <option value="advanced">Advanced 500$</option>
+                  <option value="professional">Professional 750$</option>
+                  <option value="maintinence">Maintinence 200$</option>
+                </select>
+              </section>
+
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input
+                  style="font-family: Poppins"
+                  type="email"
+                  id="email"
+                  name="email"
+                />
+              </div>
+            </span>
+
+            <div class="form-group">
+              <label style="float: left" for="message">Message:</label>
+              <br />
+              <textarea
+                style="font-family: Poppins"
+                placeholder="Write something here..."
+                name="message"
+                id="message"
+                cols="80"
+                rows="6"
+              ></textarea>
+            </div>
+          </form>
           <button
             class="simple-button"
             style="font-family: Poppins"
