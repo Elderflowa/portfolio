@@ -472,6 +472,7 @@ body .packages-preview .preview {
   width: 40rem;
   border-radius: 25px;
   border: 3px solid rgba(27, 31, 35, 0.15);
+  animation: fadeIn 0.5s;
 }
 body .packages-preview .preview.active {
   display: inline-block;
