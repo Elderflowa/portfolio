@@ -68,7 +68,7 @@
       <div class="form_screen" id="formular">
         <div class="form-container">
           <div class="form-headline"><h2>Let's do business!</h2></div>
-          
+
           <form action="https://formspree.io/f/mjvdnlgl" method="post">
             <div class="form-group">
               <label for="firstName">First Name:</label>
@@ -91,7 +91,11 @@
             </div>
 
             <div>
-              <input name="subject" type="hidden" value="New order from {{ name }}" />
+              <input
+                name="subject"
+                type="hidden"
+                value="New order from {{ name }}"
+              />
             </div>
 
             <span class="email-container">
@@ -132,15 +136,16 @@
                 rows="6"
               ></textarea>
             </div>
+
+            <button
+              class="simple-button"
+              style="font-family: Poppins"
+              type="submit"
+              role="button"
+            >
+              Submit
+            </button>
           </form>
-          <button
-            class="simple-button"
-            style="font-family: Poppins"
-            type="submit"
-            role="button"
-          >
-            Submit
-          </button>
         </div>
       </div>
     </div>
