@@ -69,13 +69,13 @@
         <div class="form-container">
           <div class="form-headline"><h2>Let's do business!</h2></div>
 
-          <!--<form action="https://formspree.io/f/mjvdnlgl" method="post">-->
-          <form
+          <!--<form
             action="https://formkeep.com/f/e4d2d8a62de7"
             accept-charset="UTF-8"
             enctype="multipart/form-data"
             method="POST"
-          >
+          >-->
+          <form action="https://formspree.io/f/mjvdnlgl" method="post">
             <div class="form-group">
               <label for="firstName">First Name:</label>
               <input
@@ -97,11 +97,7 @@
             </div>
 
             <div>
-              <input
-                name="subject"
-                type="hidden"
-                value="New order of {{ select-package }} by {{ firstName }}"
-              />
+              <input name="subject" type="hidden" value="New order of {{ Package Selected }} from {{ First Name }}" />
             </div>
 
             <span class="email-container">
@@ -152,7 +148,7 @@
             >
               Submit
             </button>
-          </form>
+          </>
         </div>
       </div>
     </div>
