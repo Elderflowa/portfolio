@@ -487,6 +487,16 @@ body .packages-preview .preview .fa-times {
 body .packages-preview .preview .fa-times:hover {
   transform: rotate(90deg);
 }
+body #price-buy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+body #buy-package {
+  bottom: -14px;
+  box-shadow: rgba(27, 31, 35, 0.1) 0 3px 0;
+}
 @media (min-width: 0px) {
   body .package-container {
     max-width: 1200px;
@@ -547,7 +557,7 @@ body .email-button {
   color: #fff;
   cursor: pointer;
   display: inline-flex;
-  font-family: "Poppins";
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   font-size: 14px;
   font-weight: 600;
   line-height: 20px;
@@ -584,7 +594,7 @@ body .email-icon {
   top: 2px;
   left: -2px;
 }
-body .back-button {
+body .simple-button {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -617,5 +627,45 @@ body .back-button {
   touch-action: manipulation;
   vertical-align: middle;
   white-space: nowrap;
-  scale: 1.2;
+  scale: 1.1;
+}
+
+.form_screen {
+  height: 100vh;
+  position: relative;
+  background-color: rgb(65, 65, 65);
+  /*background-color: rgb(73, 121, 122);*/
+  text-align: center;
+}
+.form_screen .form-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Poppins";
+}
+.form_screen .form-headline h2 {
+  color: white;
+  font-size: 3.5em;
+  font-weight: 600;
+  padding-bottom: 0;
+}
+.form_screen .email-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form_screen .form-group {
+  padding: 10px;
+}
+
+.form_screen input, textarea, select {
+  border: 2px solid cadetblue;
+  border-radius: 4px;
+}
+
+.form_screen textarea {
+  resize: vertical;
+  min-height: 160px;
+  max-height: 320px;
 }/*# sourceMappingURL=main.css.map */

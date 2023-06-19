@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <script src="app.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="./Images/vectorlogo.png" />
+    <title>Form</title>
+  </head>
+  <header>
+    <nav class="navbar">
+      <a href="./main.html#home" class="nav-branding"><h1>ELDR.</h1></a>
+
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="./main.html#about" class="nav-link" id="nav-about-me"
+            >About Me</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            href="https://github.com/Elderflowa"
+            class="nav-link"
+            target="_blank"
+            >GitHub</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="./main.html#contact" class="nav-link">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a href="./main.html#services" class="nav-link">Services</a>
+        </li>
+        <li class="nav-item">
+          <a href="./error.html" class="nav-link" id="click-me">Click Me!</a>
+        </li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+    <a class="quick-action1" id="myBtn" href="./error.html" target="_blank">
+      <img id="homemade" src="./Images/homemade.png" />
+    </a>
+    <a
+      class="quick-action2"
+      id="myBtn2"
+      href="https://www.youtube.com/"
+      target="_blank"
+    >
+      <!--<img class="square-img" src="./Images/logo_youtube.png" />-->
+    </a>
+    <a class="scroll-button" id="myBtn3" href="./main.html#home">
+      <img class="square-img" src="./Images/backtotop1.png" />
+    </a>
+  </header>
+
+  <body>
+    <div class="parallax_wrapper">
+      <div class="form_screen" id="formular">
+        <div class="form-container">
+          <div class="form-headline"><h2>Let's do business!</h2></div>
+
+          <div class="form-group">
+            <label for="firstName">First Name:</label>
+            <input style="font-family: Poppins" type="text" id="firstName" name="firstName" />
+          </div>
+
+          <div class="form-group">
+            <label for="lastName">Last Name:</label>
+            <input style="font-family: Poppins" type="text" id="lastName" name="lastName" />
+          </div>
+
+          <span class="email-container">
+            <section class="package-type form-group">
+              <label for="select-package">Select package:</label>
+              <select
+                style="font-family: Poppins"
+                class="select-package"
+                id="selector"
+              >
+                <option value="simple">Simple 250$</option>
+                <option value="advanced">Advanced 500$</option>
+                <option value="professional">Professional 750$</option>
+                <option value="maintinence">Maintinence 200$</option>
+              </select>
+            </section>
+
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input style="font-family: Poppins" type="email" id="email" name="email" />
+            </div>
+          </span>
+
+          <div class="form-group">
+            <label style="float: left" for="message">Message:</label>
+            <br />
+            <textarea style="font-family: Poppins" placeholder="Write something here..." name="message" id="message" cols="80" rows="6"></textarea>
+          </div>
+
+          <button
+            class="simple-button"
+            style="font-family: Poppins"
+            type="submit"
+            role="button"
+          >
+            Submit
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
