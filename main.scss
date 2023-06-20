@@ -436,6 +436,12 @@ body {
       left: 50%;
       transform: translate(-50%, -50%);
     }
+    
+    .services-paragraph1 {
+      position: relative;
+      top: 0px;
+      padding-bottom: 15px;
+    }
 
     .services-paragraph2 {
       padding-top: 15px;
@@ -464,10 +470,28 @@ body {
       cursor: pointer;
     }
 
+    .package-more {
+      display: none;
+      color:white;
+    }
+
     .package:hover {
       transform: scale(1.05);
       background-color: rgb(82, 135, 138);
       border: 3px solid rgb(61, 104, 106);
+    
+      .package-more {
+        display: flex;
+        position: absolute;
+        top: 1rem;
+        right: 1.5rem;
+        cursor: pointer;
+        color: #fff;
+        font-size: 2rem;
+        height: 2vh;
+        width: auto;
+        animation: fadeIn .5s;
+      }
     }
 
     .package-info {
@@ -566,7 +590,8 @@ body {
       color: white;
       height: 6rem;
       width: 65vw;
-      font-size: medium;
+      font-size: 120%;
+      /*font-size: medium;*/
       padding: 7px;
 
       .package-info .package-price {
@@ -585,7 +610,8 @@ body {
       color: white;
       height: 10rem;
       width: 30vw;
-      font-size: large;
+      font-size: 145%;
+      /*font-size: large;*/
       padding: 30px;
 
       .package-info .package-price {
@@ -603,7 +629,8 @@ body {
       color: white;
       height: 15rem;
       width: 25vw;
-      font-size: larger;
+      font-size: 190%;
+      /*font-size: larger;*/
       padding: 65px;
 
       .package-info .package-price {
